@@ -21,7 +21,7 @@
     "@toast-ui/editor-plugin-uml": "^3.0.0",
     "@toast-ui/vue-editor": "^3.0.0",
     "axios": "0.18.1",
-    "core-js": "3.6.5",
+    "core-js": "^3.32.1",
     "element-ui": "2.13.2",
     "js-cookie": "2.2.0",
     "normalize.css": "7.0.0",

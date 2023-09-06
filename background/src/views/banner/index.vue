@@ -91,7 +91,6 @@
 
 <script>
 import { getBanner, setBanner } from "@/api/banner.js";
-import { server_URL } from "@/urlConfig.js";
 // 引入封装好的上传图片组件
 import Upload from "@/components/Upload.vue";
 

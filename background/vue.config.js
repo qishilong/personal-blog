@@ -58,9 +58,33 @@ module.exports = {
       alias: {
         '@': resolve('src')
       }
-    }
+    },
+    externals: {
+      vue: 'Vue',
+      'element-ui':'ELEMENT',
+      axios:'axios',
+      vuex:'Vuex'
+    },
   },
   chainWebpack(config) {
+
+    const cdn = {
+      css: [
+        'https://unpkg.com/element-ui/lib/theme-chalk/index.css'
+      ],
+      js: [
+        'https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.1/axios.min.js',
+        'https://cdnjs.cloudflare.com/ajax/libs/vuex/3.1.0/vuex.min.js',
+        'https://unpkg.com/element-ui/lib/index.js'
+      ]
+    }
+    config.plugin('html')
+      .tap(args => {
+        args[0].cdn = cdn
+        return args;
+      })
+
     // it can improve the speed of the first screen, it is recommended to turn on preload
     config.plugin('preload').tap(() => [
       {

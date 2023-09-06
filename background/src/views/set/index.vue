@@ -134,7 +134,6 @@
 <script>
 import { getSetting, setSetting } from "@/api/setting.js";
 import Upload from '@/components/Upload.vue'
-import { server_URL } from '@/urlConfig.js'
 export default {
   data() {
     return {
@@ -180,9 +179,6 @@ export default {
       getSetting().then(res=>{
         this.form = res.data;
         // 处理图片的链接
-        // this.form.avatar2 = server_URL  + this.form.avatar;
-        // this.form.qqQrCode2 = server_URL  + this.form.qqQrCode;
-        // this.form.weixinQrCode2 = server_URL  + this.form.weixinQrCode;
         this.form2 = {...this.form};
       })
     },

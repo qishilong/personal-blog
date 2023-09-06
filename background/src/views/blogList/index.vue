@@ -44,7 +44,7 @@
       </el-table-column>
 
       <el-table-column prop="title" label="所属分类" width="150" align="center">
-        <template slot-scope="scope">{{ 
+        <template slot-scope="scope">{{
           scope.row.category === null ? '未分类' : scope.row.category.name
         }}</template>
       </el-table-column>
@@ -111,7 +111,7 @@
 <script>
 import { findBlog, delOneBlog } from "@/api/blog.js";
 import { formatDate } from "@/utils/tools.js";
-import { server_URL, frontEnd_URL } from "@/urlConfig.js";
+import { frontEnd_URL } from "@/urlConfig.js";
 export default {
   data() {
     return {

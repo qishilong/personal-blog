@@ -158,7 +158,6 @@
 
 <script>
 import { getProject, setProject, delProject } from "@/api/project.js";
-import { server_URL } from "@/urlConfig.js";
 import Upload from "@/components/Upload.vue";
 
 export default {

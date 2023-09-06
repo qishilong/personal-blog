@@ -10,6 +10,7 @@
     >
       <div class="title-container">
         <h3 class="title">个人空间后台系统</h3>
+        <p class="tips">（演示系统，登录账号、密码已提供）</p>
       </div>
 
       <!-- 管理员账号 -->
@@ -123,8 +124,8 @@ export default {
     return {
       svg : '',
       loginForm : {
-        loginId : '',
-        loginPwd : '',
+        loginId : 'admin',
+        loginPwd : '123456',
         captcha : '',
         checked : true,
       },
@@ -307,7 +308,14 @@ $light_gray: #eee;
     .title {
       font-size: 26px;
       color: $light_gray;
-      margin: 0px auto 40px auto;
+      margin: 0px auto 20px auto;
+      text-align: center;
+      font-weight: bold;
+    }
+    .tips{
+      font-size: 20px;
+      color: $light_gray;
+      margin: 0px auto 20px auto;
       text-align: center;
       font-weight: bold;
     }
