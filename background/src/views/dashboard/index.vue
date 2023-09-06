@@ -1,13 +1,7 @@
 <template>
   <div class="dashboard-container">
       <div class="dashboard-text">欢迎使用个人博客后台</div>
-<!--    <div class="dashboard-tips">-->
-<!--      <i class="el-icon-warning"></i>-->
-<!--      <p>-->
-<!--        请注意，本系统为演示系统，所以请不要随意删除或者修改系统数据！！！-->
-<!--      </p>-->
-<!--    </div>-->
-    <p class="dashboard-tips">请注意，本系统为演示系统，所以请不要随意删除或者修改系统数据！！！</p>
+    <!-- <p class="dashboard-tips">请注意，本系统为演示系统，所以请不要随意删除或者修改系统数据！！！</p> -->
     <canvas ref='ref' class="dashboard-canvas"></canvas>
   </div>
 </template>
@@ -190,32 +184,9 @@ export default {
     width: 80%;
     height: 80%;
   }
-  &-tips{
-    color: red;
-    font-size: 30px;
-  }
-  //&-tips{
-  //  margin: 0;
-  //  padding: 0;
-  //  position: absolute;
-  //  right: -970px;
-  //  top: 0;
-  //  display: flex;
-  //  justify-content: center;
-  //  align-items: center;
-  //  border: 1px solid #ccc;
-  //  width: 92%;
-  //  font-size: 30px;
-  //  color: red;
-  //  box-sizing: border-box;
-  //  transition: 0.5s ease-in;
-  //  &>i{
-  //    font-size: 60px;
-  //    padding: 0px 30px;
-  //  }
-  //}
-  //&-tips:hover{
-  //  right: 30px;
-  //}
+//   &-tips{
+//     color: red;
+//     font-size: 30px;
+//   }
 }
 </style>
